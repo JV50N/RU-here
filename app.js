@@ -15,6 +15,7 @@ const passport = require('passport');
 // set up the express app
 const app = express();
 const PORT = process.env.PORT || 4000;
+var db = require("./models");
 const server = app.listen(PORT, () => {
 	console.log(`App now listening at PORT: ${PORT}`);
 });
@@ -88,3 +89,9 @@ require('./routes/html-routes.js')(app);
 // app.listen(PORT, () => {
 // 	console.log(`App now listening at PORT: ${PORT}`);
 // });
+// 
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+  });
+});
