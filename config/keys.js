@@ -10,8 +10,8 @@ module.exports = {
         cookieKey: 'ruheregroupproject'
     },
     herokuDb: {
-        db: 'heroku_686a51fa5a66f85',
-        user: 'b5792a6879782a',
-        pw: 'e15c19e4'
+        db: 'ru_here',
+        user: 's1zfbcrsxp88l43e',
+        pw: 'oxgxt4qq1usi7api '
     }
 };

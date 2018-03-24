@@ -16,10 +16,10 @@
 	},
 	"production": {
 		"use_env_variable": "JAWSDB_URL",
-		"username": "root",
-		"password": "null",
+		"username": "s1zfbcrsxp88l43e",
+		"password": "oxgxt4qq1usi7api",
 		"database": "production_db",
-		"host": "127.0.0.1",
+		"host": "k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"dialect": "mysql"
 	}
 }
