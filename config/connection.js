@@ -1,11 +1,16 @@
 // dependencies
 const Sequelize = require('sequelize');
+const keys = require('./keys');
+
+var db = keys.herokuDb.db;
+var user = keys.herokuDb.user;
+var pw = keys.herokuDb.pw;
 
 // creates mySQL connection using Sequelize
-const sequelize = new Sequelize('ruhere_db', 'root', 'root', {
+const sequelize = new Sequelize('db', 'user', 'pw', {
 	host: 'localhost',
 	dialect: 'mysql',
-	port: 3306,
+	// port: 3306,
 	pool: {
 		max: 5,
 		min: 0,
