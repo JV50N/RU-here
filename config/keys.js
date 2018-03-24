@@ -12,6 +12,6 @@ module.exports = {
     herokuDb: {
         db: 'heroku_686a51fa5a66f85',
         user: 'b5792a6879782a',
-        pw: 'e15c19e4';
+        pw: 'e15c19e4'
     }
 };
