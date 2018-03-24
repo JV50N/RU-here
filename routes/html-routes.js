@@ -21,6 +21,26 @@ module.exports = (app) => {
     	res.render('chat');
     });
 
+    app.get('/mentor', (req,res) => {
+        res.render('mentor');
+    });
+
+    app.get('/mentee', (req,res) => {
+        res.render('mentee');
+    });
+
+    app.get('/connections', (req,res) => {
+        res.send('this will be the connections page');
+    });
+
+    app.get('/edit', (req, res) => {
+        res.send('this is where you will edit your profile');
+    });
+
+    app.get('/signup',(req,res)=>{
+        res.render('signup');
+    });
+
     // create login route
     // app.get()
    

@@ -14,6 +14,14 @@ router.get('/logout', (req, res) => {
     res.redirect('/'); // redirect to root
 });
 
+//sign up
+router.get('/signup', (req, res) => {
+    //handle with passport.js
+    // res.send('logging out. . .');
+    
+    res.redirect('/signup'); // redirect to root
+});
+
 // auth with google
 router.get('/google', passport.authenticate('google', {scope: ['profile']}));
 

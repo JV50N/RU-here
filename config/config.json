@@ -1,25 +1,25 @@
-{
-	"development": {
-		"username": "root",
-		"password": "null",
-		"database": "ruhere_db",
-		"host": "127.0.0.1",
-		"dialect": "mysql"
-	},
-	"test": {
-		"username": "root",
-		"password": "null",
-		"database": "test_db",
-		"host": "127.0.0.1",
-		"dialect": "mysql"
+// {
+// 	"development": {
+// 		"username": "root",
+// 		"password": "null",
+// 		"database": "ruhere_db",
+// 		"host": "127.0.0.1",
+// 		"dialect": "mysql"
+// 	},
+// 	"test": {
+// 		"username": "root",
+// 		"password": "null",
+// 		"database": "test_db",
+// 		"host": "127.0.0.1",
+// 		"dialect": "mysql"
 
-	},
-	"production": {
-		"use_env_variable": "JAWSDB_URL",
-		"username": "s1zfbcrsxp88l43e",
-		"password": "oxgxt4qq1usi7api",
-		"database": "production_db",
-		"host": "k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-		"dialect": "mysql"
-	}
-}
+// 	},
+// 	"production": {
+// 		"use_env_variable": "JAWSDB_URL",
+// 		"username": "s1zfbcrsxp88l43e",
+// 		"password": "oxgxt4qq1usi7api",
+// 		"database": "production_db",
+// 		"host": "k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+// 		"dialect": "mysql"
+// 	}
+// }

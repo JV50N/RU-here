@@ -1,0 +1,251 @@
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header-inner">
+    <nav class="red darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">
+            RUHere
+          </a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#login-modal" class="btn black modal-trigger">
+                Login
+              </a>
+            </li>
+          </ul>
+
+          <!-- Navbar -->
+          <ul class="side-nav" id="mobile-nav">
+            <h4 class="black-text center">RUHere</h4>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-home black-text"></i>Home</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="#" class="btn red">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Background Showcase -->
+    <div class="transparent red-text">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+          <h3>Mentee</h3>
+          <h1>Questionnaire</h1>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+  </header>
+
+  <!-- This is the questionnaire Section identical to the Signup page -->
+  <section class="section section-questionnaire white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel login red darken-2 white-text center">
+            <form>
+
+  <!-- Question 1 -->
+              <div class="input-field">
+                <select id="select">
+                  <option value="" disabled selected>
+                    Select one
+                  </option>
+                  <option value="Q1answer1">
+                    Front-end (general) 
+                  <option value="Q1answer2">
+                    UI / UX
+                  </option>
+                  <option value="Q1answer3">
+                    Back-end (general)
+                  </option>
+                  <option value="Q1answer4">
+                    Data science
+                  </option>
+                  <option value="Q1answer5">
+                    Fullstack
+                  </option>
+                </select>
+                <label for="Question1">
+                  The skillset focus of my current job is …
+                </label>
+              </div>
+
+  <!-- Question 2 -->
+              <div class="input-field">
+                <select id="select">
+                  <option value="" disabled selected>
+                    Select one
+                  </option>
+                  <option value="Q2answer1">
+                    Freelancer 
+                  <option value="Q2answer2">
+                    Company
+                  </option>
+                </select>
+                <label for="Question2">
+                  Are you interested in matching with a freelancer or as an employee of a company?
+                </label>
+              </div>
+
+  <!-- Question 3 -->
+              <div class="input-field">
+                <select id="select">
+                  <option value="" disabled selected>
+                    Select one
+                  </option>
+                  <option value="Q3answer1">
+                    C  
+                  <option value="Q3answer2">
+                    Java
+                  </option>
+                  <option value="Q3answer3">
+                     CSS, HTML & Javascript
+                  </option>
+                  <option value="Q3answer4">
+                    R
+                  </option>
+                  <option value="Q3answer5">
+                    Python
+                  </option>
+                </select>
+                <label for="question3">
+                  Language most interested in improving on …
+                </label>
+              </div>
+
+  <!-- Question 4 -->
+              <div class="input-field">
+                <select id="select">
+                  <option value="" disabled selected>
+                    Select one
+                  </option>
+                  <option value="Q4answer1">
+                    Interviewing  
+                  <option value="Q4answer2">
+                    Coding
+                  </option>
+                  <option value="Q4answer3">
+                    Career Planning
+                  </option>
+                  <option value="Q4answer4">
+                    Hosting & Administration
+                  </option>
+                  <option value="Q4answer5">
+                    Other
+                  </option>
+                </select>
+                <label for="Question4">
+                  Which of these options do you need help with most? 
+                </label>
+              </div>
+
+  <!-- Submit Button -->
+              <input type="submit" value="Submit" class="btn btn-large black btn-extend">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer red darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">
+            About Us
+          </h5>
+          <p class="white-text">
+            Project 2 Group 4 Mentorship and Social Media App 
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#">Profile</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#">Login</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+        Group4 &copy; 2018
+        <a class="white-text right" href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your profile</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+
+  <!-- Modal footer -->
+    <div class="modal-footer">
+      <a href="profile.html" class="modal-action modal-close btn red">
+        <i class="fa fa-sync"></i> Login with your Google account</a>
+      <a href="profile.html" class="modal-action modal-close btn black">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.button-collapse').sideNav();
+      $('.modal').modal();
+      $('select').material_select();
+    });
+  </script>
