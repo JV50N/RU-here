@@ -1,0 +1,82 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example Project Page</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+        <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+	<nav>
+            <ul>
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/">Homepage</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Example Page</h1>
+            <h2>Homepage</h2>
+        </header>
+
+            {{{ body }}}
+	<script src='/assets/js/script.js'></script>
+</body>
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+
+ 
+  
+  
+
+  
+ 
+
+
+            {{{ body }}}
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/assets/js/core/popper.min.js"></script>
+    <script type="text/javascript"  src="/assets/js/bootstrap-material-design.js"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
+    <script type="text/javascript" src="/assets/js/plugins/moment.min.js"></script>
+    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script type="text/javascript"  src="/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <!--    Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script type="text/javascript" src="/assets/js/plugins/nouislider.min.js"></script>
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script type="text/javascript" src="/assets/js/material-kit.js?v=2.0.2"></script>
+  <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/assets/js/chat.js"></script>
+
+  <script>
+    // Hide Sections
+    $('.section').hide();
+    setTimeout(function () {
+      $(document).ready(function () {
+        // Show sections
+        $('.section').fadeIn();
+        // Hide preloader
+        $('.loader').fadeOut();
+      });
+    }, 1000);
+  </script>
+</body>
+
+</html>

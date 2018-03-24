@@ -1,0 +1,86 @@
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" /> 
+ <link type="text/css" rel="stylesheet" href="/assets/css/style.css" />
+ <title> RUHere - bootcamp network</title>
+</head>
+
+  <!-- Navbar and logo -->
+<body class="grey lighten-4">
+  <nav class="red darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="/auth/login" class="brand-logo black-text">
+          RUHere
+        </a>
+      </div>
+    </div>
+</nav>
+
+<!-- Login or Signup -->
+  <section class="section section-login">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel login red darken-2 black-text center">
+            <h2>
+              RUHere Login
+            </h2>
+            <form action="#">
+              <!-- This is an inline input field:
+          <div class="input-field inline">
+            <input id="email" type="email" class="white-text">
+            <label for="email" data-error="wrong" data-success="right">Email</label>  -->
+              <div class="input-field">
+                <i class="material-icons prefix">
+                  email
+                </i>
+                <input type="email" id="email">
+                <label class="white-text" for="email">
+                  Email
+                </label>
+              </div>
+              <!-- This is an inline input field:
+          <div class="input-field inline">
+            <input type="password" id="password">
+                <label class="white-text" for="password">Password</label>  -->
+              <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input type="password" id="password">
+                <label class="white-text" for="password">
+                  Password
+                </label>
+              </div>  
+              <input href="signup.html" type="submit" value="Login" class="btn btn-large btn-extended grey lighten-4 black-text">
+              <a class="btn btn-large btn-extended grey lighten-4 black-text" href="/auth/google">Sign in with Google!</a>
+              <p class="center-align">
+                -or-
+              </p>
+              <input type="submit" value="Signup" class="btn btn-large btn-extended grey lighten-4 black-text">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section red darken-2 black-text center">
+    <p>Group4 Copyright &copy; 2018</p>
+  </footer>
+
+
+
+  <!-- Red Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
